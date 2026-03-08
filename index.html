@@ -53,8 +53,8 @@ backdrop-filter:blur(6px);
 /* LOGO */
 
 .logo img{
-width:160px;
-max-width:70%;
+width:220px;
+height:auto;
 margin-bottom:40px;
 }
 
@@ -143,18 +143,6 @@ box-shadow:
 
 }
 
-/* TEXTO FINAL */
-
-.motivacional{
-margin-top:50px;
-font-size:15px;
-opacity:0.85;
-font-style:italic;
-max-width:500px;
-margin-left:auto;
-margin-right:auto;
-}
-
 /* FOOTER */
 
 .footer{
@@ -162,9 +150,29 @@ margin-right:auto;
 margin-top:40px;
 text-align:center;
 font-size:12px;
-opacity:0.6;
+opacity:0.7;
 color:white;
 
+}
+
+/* ÍCONE SVG */
+
+.dev-icon{
+
+vertical-align:middle;
+margin-right:6px;
+opacity:0.8;
+
+}
+
+.footer a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer a:hover{
+text-decoration:underline;
 }
 
 /* MOBILE */
@@ -172,7 +180,7 @@ color:white;
 @media(max-width:768px){
 
 .logo img{
-width:140px;
+width:180px;
 }
 
 .headline{
@@ -181,12 +189,11 @@ font-size:30px;
 
 .subheadline{
 font-size:16px;
-margin-bottom:35px;
 }
 
 .cta-button{
 font-size:18px;
-padding:18px 34px;
+padding:16px 34px;
 }
 
 }
@@ -194,6 +201,10 @@ padding:18px 34px;
 /* MOBILE PEQUENO */
 
 @media(max-width:420px){
+
+.logo img{
+width:150px;
+}
 
 .headline{
 font-size:26px;
@@ -203,18 +214,14 @@ font-size:26px;
 font-size:15px;
 }
 
-.logo img{
-width:120px;
-}
-
 .cta-button{
-width:90%;
-max-width:320px;
+font-size:14px;
+width:95%;
+max-width:400px;
 }
 
 .footer{
 font-size:10px;
-margin-top:30px;
 }
 
 }
@@ -236,7 +243,6 @@ SEM VENDAS? Calma, acesse o nosso treinamento e comece a vender ainda essa seman
 </h1>
 
 <p class="subheadline">
-Aqui dentro você encontrará um método claro e comprovado.
 Se você aplicar exatamente o que está no treinamento e estudar o conteúdo todos os dias, suas habilidades de venda vão evoluir rapidamente.
 </p>
 
@@ -244,13 +250,17 @@ Se você aplicar exatamente o que está no treinamento e estudar o conteúdo tod
 Acessar Treinamento
 </a>
 
-<p class="motivacional">
-Grandes vendedores não nascem prontos.<br>
-Estude. Aplique. Repita.
-</p>
-
 <footer class="footer">
-Desenvolvido por: <b>Gustavo Kasopi</b>
+
+<svg class="dev-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24">
+<path d="M8 5L3 12L8 19M16 5L21 12L16 19M14 3L10 21"/>
+</svg>
+
+Desenvolvido por:
+<a href="https://instagram.com/gu.kasopi" target="_blank">
+Gustavo Kasopi
+</a>
+
 </footer>
 
 </div>
