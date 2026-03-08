@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Treinamento de Vendas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+
+background:
+radial-gradient(circle at 20% 30%, #1a4fff 0%, transparent 40%),
+radial-gradient(circle at 80% 70%, #0037a3 0%, transparent 40%),
+linear-gradient(180deg,#050f24,#0a1f44);
+
+}
+
+/* CONTAINER */
+
+.container{
+
+max-width:800px;
+width:100%;
+position:relative;
+z-index:10;
+padding:30px;
+
+backdrop-filter:blur(6px);
+
+}
+
+/* LOGO */
+
+.logo img{
+width:160px;
+max-width:70%;
+margin-bottom:40px;
+}
+
+/* HEADLINE */
+
+.headline{
+font-size:42px;
+font-weight:600;
+margin-bottom:20px;
+line-height:1.2;
+letter-spacing:-0.5px;
+text-shadow:0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* SUB */
+
+.subheadline{
+font-size:18px;
+opacity:0.9;
+margin-bottom:40px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* BOTÃO */
+
+.cta-button{
+
+display:inline-block;
+padding:18px 48px;
+font-size:20px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:600;
+
+background:linear-gradient(45deg,#2a6bff,#4e8cff);
+
+box-shadow:
+0 0 10px #2a6bff,
+0 0 20px #2a6bff,
+0 0 40px #2a6bff;
+
+animation:pulse 1.6s infinite;
+transition:0.3s;
+
+}
+
+/* ANIMAÇÃO PULSANTE */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+box-shadow:
+0 0 10px #2a6bff,
+0 0 20px #2a6bff;
+}
+
+50%{
+transform:scale(1.08);
+box-shadow:
+0 0 20px #2a6bff,
+0 0 40px #2a6bff,
+0 0 80px #2a6bff;
+}
+
+100%{
+transform:scale(1);
+box-shadow:
+0 0 10px #2a6bff,
+0 0 20px #2a6bff;
+}
+
+}
+
+.cta-button:hover{
+
+transform:scale(1.1);
+
+box-shadow:
+0 0 30px #2a6bff,
+0 0 60px #2a6bff,
+0 0 120px #2a6bff;
+
+}
+
+/* TEXTO FINAL */
+
+.motivacional{
+margin-top:50px;
+font-size:15px;
+opacity:0.85;
+font-style:italic;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* FOOTER */
+
+.footer{
+
+margin-top:40px;
+text-align:center;
+font-size:12px;
+opacity:0.6;
+color:white;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo img{
+width:140px;
+}
+
+.headline{
+font-size:30px;
+}
+
+.subheadline{
+font-size:16px;
+margin-bottom:35px;
+}
+
+.cta-button{
+font-size:18px;
+padding:18px 34px;
+}
+
+}
+
+/* MOBILE PEQUENO */
+
+@media(max-width:420px){
+
+.headline{
+font-size:26px;
+}
+
+.subheadline{
+font-size:15px;
+}
+
+.logo img{
+width:120px;
+}
+
+.cta-button{
+width:90%;
+max-width:320px;
+}
+
+.footer{
+font-size:10px;
+margin-top:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="https://i.imgur.com/m0Rfd3K.png" alt="Logo">
+</div>
+
+<h1 class="headline">
+SEM VENDAS? Calma, acesse o nosso treinamento e comece a vender ainda essa semana!
+</h1>
+
+<p class="subheadline">
+Aqui dentro você encontrará um método claro e comprovado.
+Se você aplicar exatamente o que está no treinamento e estudar o conteúdo todos os dias, suas habilidades de venda vão evoluir rapidamente.
+</p>
+
+<a href="https://drive.google.com/drive/folders/1vD7_S6JsOfUa5VdpiNCB-ZhWzWCse8K1?usp=sharing" class="cta-button">
+Acessar Treinamento
+</a>
+
+<p class="motivacional">
+Grandes vendedores não nascem prontos.<br>
+Estude. Aplique. Repita.
+</p>
+
+<footer class="footer">
+Desenvolvido por: <b>Gustavo Kasopi</b>
+</footer>
+
+</div>
+
+</body>
+
+</html>
