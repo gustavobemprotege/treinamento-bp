@@ -104,7 +104,7 @@ transition:0.3s;
 
 }
 
-/* ANIMAÇÃO PULSANTE */
+/* ANIMAÇÃO */
 
 @keyframes pulse{
 
@@ -155,7 +155,7 @@ color:white;
 
 }
 
-/* ÍCONE SVG */
+/* ÍCONE */
 
 .dev-icon{
 
@@ -178,6 +178,14 @@ text-decoration:underline;
 /* MOBILE */
 
 @media(max-width:780px){
+
+/* REMOVE CENTRALIZAÇÃO VERTICAL NO CELULAR */
+
+body{
+align-items:flex-start;
+justify-content:flex-start;
+padding-top:40px;
+}
 
 .logo img{
 width:220px;
@@ -203,11 +211,11 @@ padding:18px 36px;
 @media(max-width:420px){
 
 .logo img{
-width:160px;
+width:180px;
 }
 
 .headline{
-font-size:28px;
+font-size:30px;
 }
 
 .subheadline{
@@ -266,5 +274,4 @@ Gustavo Kasopi
 </div>
 
 </body>
-
 </html>
